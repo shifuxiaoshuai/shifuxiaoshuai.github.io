@@ -1,46 +1,58 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
+div.gallery:hover {
+  border: 1px solid #777;
 }
-</style>
-<style>
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 </style>
 </head>
 <body>
 
-<h1>网格容器</h1>
-
-<p>网格容器由按列和行排列的网格项目组成：</p>
-
-<div class="grid-container">
-  <div><img src="\img\0.jpg" alt="双手遮眼美女唯美壁纸"   style="width:150px"/><b>双手遮眼美女唯美壁纸</b></div>
-  <div>2</div>
-  <div>3</div>  
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
+<div class="gallery">
+  <a target="_blank" href="/i/photo/tulip-yellow.jpg">
+    <img src="/i/photo/tulip-yellow.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">在此处添加图像描述</div>
 </div>
 
-<p>网格容器的直接子元素将自动成为网格项目。</p>
+<div class="gallery">
+  <a target="_blank" href="/i/photo/tulip-red.jpg">
+    <img src="/i/photo/tulip-red.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">在此处添加图像描述</div>
+</div>
 
+<div class="gallery">
+  <a target="_blank" href="/i/photo/flower-1.jpg">
+    <img src="/i/photo/flower-1.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">在此处添加图像描述</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/i/photo/flower-2.jpg">
+    <img src="/i/photo/flower-2.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">在此处添加图像描述</div>
+</div>
+
+</body>
+</html>
